@@ -1,0 +1,173 @@
+/* Подключение через import внешние ссылки на normalize и шрифты */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  line-height: normal;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  min-height: 100vh;
+}
+
+/* Стили для элементов из header */
+header {
+  position: fixed;
+  top: 0;
+  background-color: #333333;
+  width: 100%;
+}
+nav {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a button {
+  margin: 0.5%;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #e7e7e7;
+  background-color: #333333;
+}
+a > button > img {
+  padding-right: 5px;
+  vertical-align: bottom;
+}
+nav button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
+}
+nav button:active {
+  background: #e7e7e7;
+}
+
+/* Стили для элементов из main */
+main {
+  flex-grow: 1;
+  margin: 80 5%;
+  margin-top: 80px;
+}
+h2 {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+}
+.section_01 {
+  margin: 0 auto;
+  text-align: center;
+}
+.section_01 > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.block_qualities {
+  display: inline-block;
+  vertical-align: middle;
+}
+.block_qualities ul {
+  text-align: left;
+  margin-bottom: 0;
+}
+.block_qualities span {
+  font-size: 1.5rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+  font-family: 'Roboto Slab', serif;
+}
+.block_qualities ul li {
+  font-size: 1.5rem;
+}
+
+.block_info h4 {
+  text-align: center;
+  background-color: #d9dddc;
+  font-size: 1.6rem;
+}
+.block_info div {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+.block_info ul li {
+  padding: 5px;
+  font-size: 1.5rem;
+  text-align: left;
+}
+/* Стили для элементов из footer */
+footer {
+  flex-shrink: 0;
+  background-color: #333333;
+  width: 100%;
+}
+.block_buttons button {
+  margin: 2px;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  color: #e7e7e7;
+  background-color: #333333;
+}
+.block_buttons {
+  margin: 10px;
+}
+
+.block_links img {
+  padding-left: 10px;
+  text-decoration: none;
+}
+/* Стили для таблицы */
+.table {
+  /* width: 600px; */
+  margin: 0 auto;
+}
+.table {
+  margin-top: 2%;
+  border: 1px solid black;
+  max-width: 600px;
+}
+.title,
+.row {
+  border-bottom: 1px solid black;
+}
+
+.last-row,
+.section_03 > .title {
+  border: none;
+}
+.title,
+.th {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 1%;
+  text-align: center;
+}
+.th {
+  border-right: 1px solid black;
+  display: inline-block;
+  width: 30%;
+  text-align: left;
+  vertical-align: middle;
+}
+.td {
+  display: inline-block;
+  text-align: left;
+  padding: 1%;
+  font-size: 0.9rem;
+  vertical-align: middle;
+  width: 60%;
+}
+.section_03 > .table {
+  margin-top: 0;
+}
